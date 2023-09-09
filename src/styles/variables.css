@@ -1,0 +1,21 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --blue: #1992d4;
+  --orange: #f0b42a;
+  --light-grey: #e2e8f0;
+  --dark-grey: #a7a7a7;
+
+  --accent: var(--orange);
+  --nav-bg: var(--blue);
+  --bg: var(--light-grey);
+
+  --box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+  --border-radius: 8px;
+
+  --font: "Roboto", sans-serif;
+  --font-size: 1.2rem;
+  --font-color: var(--dark-grey);
+
+  --padding: 1rem;
+}
