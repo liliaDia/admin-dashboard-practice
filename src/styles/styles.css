@@ -1,0 +1,16 @@
+* {
+  border: solid 1px red;
+}
+
+body {
+  height: 100vh;
+}
+
+.app-container {
+  display: grid;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
