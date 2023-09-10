@@ -112,4 +112,29 @@ header {
 main {
   display: grid;
   background-color: var(--bg);
+  padding: var(--padding);
+}
+
+.announcement-container {
+  display: grid;
+}
+
+.announcement-list {
+  display: grid;
+  padding: 0 var(--padding);
+  gap: var(--gap);
+}
+
+.announcement {
+  display: grid;
+  gap: var(--gap);
+  padding-bottom: var(--padding);
+}
+
+.announcement-title {
+  margin: 0;
+}
+
+.announcement-text {
+  margin: 0;
 }
