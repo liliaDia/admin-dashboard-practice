@@ -6,6 +6,7 @@ body {
   display: grid;
   grid-template-rows: auto auto 1fr;
   height: 100%;
+  overflow: hidden;
 }
 
 .icon {
@@ -113,6 +114,7 @@ main {
   display: grid;
   background-color: var(--bg);
   padding: var(--padding);
+  overflow-y: scroll;
 }
 
 .announcement-container {
@@ -128,13 +130,40 @@ main {
 .announcement {
   display: grid;
   gap: var(--gap);
-  padding-bottom: var(--padding);
+  margin-bottom: var(--vertical-spacing);
 }
 
-.announcement-title {
+.announcement-title,
+.announcement-text {
   margin: 0;
 }
 
-.announcement-text {
+.trending-container {
+  display: grid;
+}
+
+.trending-list {
+  display: grid;
+  padding: 0 var(--padding);
+  gap: var(--gap);
+}
+
+.trending {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 2;
+  grid-template-areas:
+    "badge user"
+    "badge message";
+  column-gap: var(--gap);
+  margin-bottom: var(--vertical-spacing);
+}
+
+.trending .user {
+  margin: 0;
+  align-self: end;
+}
+
+.trending .message {
   margin: 0;
 }
