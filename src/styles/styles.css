@@ -1,22 +1,11 @@
-* {
-  border: solid 1px red;
-}
-
 body {
   height: 100vh;
 }
 
 .app-container {
   display: grid;
-}
-
-nav {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  background-color: var(--nav-bg);
-  color: white;
-  place-items: center;
-  padding: 0 var(--padding);
+  grid-template-rows: auto auto 1fr;
+  height: 100%;
 }
 
 .icon {
@@ -30,6 +19,97 @@ nav {
   width: 50px;
 }
 
+nav {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  place-items: center;
+  padding: 0 var(--padding);
+  background-color: var(--nav-bg);
+  color: var(--white);
+}
+
 nav svg path {
-  fill: white;
+  fill: var(--white);
+}
+
+header {
+  display: grid;
+  background-color: var(--white);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1;
+}
+
+.search-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--gap);
+  padding: var(--padding);
+}
+
+.account-container {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  align-items: center;
+  gap: var(--gap);
+  padding: 0 var(--padding);
+}
+
+.user-info {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 2;
+  grid-template-areas:
+    "badge message"
+    "badge user";
+  justify-self: center;
+  padding: 0 var(--padding);
+  column-gap: var(--gap);
+}
+
+.badge {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+}
+
+.badge-large {
+  width: 56px;
+  height: 56px;
+  grid-area: badge;
+  align-self: center;
+}
+
+.greeting {
+  grid-area: message;
+  margin: 0;
+  align-self: end;
+}
+
+.user {
+  grid-area: user;
+  margin: 0;
+}
+
+.controls {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding: var(--padding);
+}
+
+.header-button {
+  width: 100px;
+  border-radius: 14px;
+  border: 0;
+  padding: var(--button-padding) 0;
+  background-color: var(--blue);
+  color: var(--white);
+  text-transform: capitalize;
+}
+
+main {
+  display: grid;
+  background-color: var(--bg);
 }
