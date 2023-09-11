@@ -35,10 +35,33 @@ nav svg path {
 
 .nav-menu {
   position: fixed;
-  background-color: var(--nav-bg);
   right: 0;
   bottom: 0;
   left: 0;
+  display: grid;
+  row-gap: var(--vertical-spacing-lg);
+  background-color: var(--nav-bg);
+  padding: var(--padding);
+}
+
+.menu-group {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(6, 1fr);
+  place-content: start;
+  align-items: center;
+  column-gap: var(--gap);
+}
+
+.menu-group a {
+  color: white;
+}
+
+.menu-icon {
+  justify-self: center;
+  fill: var(--white);
+  width: 28px;
+  height: 28px;
 }
 
 header {
@@ -132,7 +155,8 @@ main {
   display: grid;
 }
 
-.announcement-list, .trending-list {
+.announcement-list,
+.trending-list {
   display: grid;
   padding: 0 var(--padding);
   /* gap: var(--gap); */
@@ -145,9 +169,13 @@ hr {
   width: 100%;
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
   margin-bottom: var(--padding);
-  
 }
 
 .announcement {
