@@ -33,6 +33,14 @@ nav svg path {
   fill: var(--white);
 }
 
+.nav-menu {
+  position: fixed;
+  background-color: var(--nav-bg);
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 header {
   display: grid;
   background-color: var(--white);
