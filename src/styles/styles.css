@@ -33,15 +33,41 @@ nav svg path {
   fill: var(--white);
 }
 
+.icon #top-line,
+.icon #bottom-line,
+.icon #middle-line {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.hamburger-open {
+  #top-line {
+    animation: down-rotate 0.6s ease-out both;
+  }
+  #bottom-line {
+    animation: up-rotate 0.6s ease-out both;
+  }
+  #middle-line {
+    animation: hide 0.6s ease-out forwards;
+  }
+}
+
 .nav-menu {
   position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
-  display: grid;
+  display: none;
   row-gap: var(--vertical-spacing-lg);
   background-color: var(--nav-bg);
   padding: var(--padding);
+  transform: translateX(-100%);
+  animation: slide-left 0.2s ease-in-out;
+}
+
+.nav-menu-open {
+  animation: slide-right 0.2s ease-in-out;
+  transform: translateX(0%);
 }
 
 .menu-group {
