@@ -64,6 +64,7 @@ nav svg path {
   padding: var(--padding);
   transform: translateX(-100%);
   animation: slide-left 0.2s ease-in-out;
+  z-index: 3;
 }
 
 .nav-menu-open {
@@ -97,6 +98,8 @@ header {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1;
   font-weight: var(--font-weight-700);
+  box-shadow: var(--box-shadow);
+  z-index: 2;
 }
 
 .search-container {
@@ -147,7 +150,7 @@ header {
   grid-area: message;
   margin: 0;
   align-self: end;
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 .user {
