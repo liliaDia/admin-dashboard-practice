@@ -167,3 +167,47 @@ main {
 .trending .message {
   margin: 0;
 }
+
+.project-container {
+  display: grid;
+}
+
+.project-list {
+  display: grid;
+  padding: 0 var(--padding);
+  gap: var(--gap);
+}
+
+.project {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  border-radius: 8px;
+  background-color: var(--white);
+  margin-bottom: var(--vertical-spacing);
+}
+
+.project-info {
+  display: grid;
+  gap: var(--gap);
+  padding: var(--padding);
+}
+
+.left-view-accent {
+  width: 4px;
+  background-color: var(--accent);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.project-title,
+.project-description {
+  margin: 0;
+}
+
+.project-controls {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: end;
+  gap: var(--gap);
+  margin-top: var(--vertical-spacing);
+}
