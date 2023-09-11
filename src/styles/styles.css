@@ -1,5 +1,6 @@
 body {
   height: 100vh;
+  font-family: var(--font);
 }
 
 .app-container {
@@ -95,6 +96,7 @@ header {
   background-color: var(--white);
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1;
+  font-weight: var(--font-weight-700);
 }
 
 .search-container {
@@ -145,6 +147,7 @@ header {
   grid-area: message;
   margin: 0;
   align-self: end;
+  font-size: .75rem;
 }
 
 .user {
@@ -185,10 +188,10 @@ main {
 .trending-list {
   display: grid;
   padding: 0 var(--padding);
-  /* gap: var(--gap); */
   border-radius: 8px;
   background-color: var(--white);
   padding: 2rem;
+  box-shadow: var(--box-shadow);
 }
 
 hr {
@@ -255,6 +258,7 @@ hr {
   border-radius: 8px;
   background-color: var(--white);
   margin-bottom: var(--vertical-spacing);
+  box-shadow: var(--box-shadow);
 }
 
 .project-info {
