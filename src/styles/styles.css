@@ -63,7 +63,6 @@ header {
   grid-template-areas:
     "badge message"
     "badge user";
-  justify-self: center;
   padding: 0 var(--padding);
   column-gap: var(--gap);
 }
@@ -79,6 +78,10 @@ header {
   height: 56px;
   grid-area: badge;
   align-self: center;
+}
+
+.settings-badge {
+  display: none;
 }
 
 .greeting {
