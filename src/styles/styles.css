@@ -11,14 +11,14 @@ body {
 }
 
 .icon {
-  height: 25px;
-  width: 25px;
+  height: var(--icon-size);
+  width: var(--icon-size);
   cursor: pointer;
 }
 
 .icon.large {
-  height: 50px;
-  width: 50px;
+  height: var(--icon-size-lg);
+  width: var(--icon-size-lg);
 }
 
 nav {
@@ -88,8 +88,8 @@ nav svg path {
 .menu-icon {
   justify-self: center;
   fill: var(--white);
-  width: 28px;
-  height: 28px;
+  width: var(--icon-size);
+  height: var(--icon-size);
 }
 
 header {
