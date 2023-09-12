@@ -78,7 +78,7 @@ nav svg path {
   grid-template-rows: repeat(6, 1fr);
   place-content: start;
   align-items: center;
-  column-gap: 1.5rem;
+  column-gap: var(--gap-medium);
 }
 
 .menu-group a {
