@@ -78,11 +78,13 @@ nav svg path {
   grid-template-rows: repeat(6, 1fr);
   place-content: start;
   align-items: center;
-  column-gap: var(--gap);
+  column-gap: var(--gap-medium);
 }
 
 .menu-group a {
   color: white;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .menu-icon {
