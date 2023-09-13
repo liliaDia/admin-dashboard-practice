@@ -299,3 +299,34 @@ hr {
   gap: var(--gap);
   margin-top: var(--vertical-spacing);
 }
+@media (min-width: 1200px) {
+  .app-container {
+    grid-template-columns: auto, 1fr;
+    grid-template-areas:
+      "nav header"
+      "nav main";
+  }
+  nav {
+    grid-area: nav;
+  }
+  header {
+    grid-area: header;
+  }
+  main {
+    grid-area: main;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "projects announcements"
+      "projects trending";
+  }
+  .projects-container {
+    grid-area: projects;
+  }
+  .announcements-container {
+    grid-area: announcements;
+  }
+  .trending-container {
+    grid-area: trending;
+  }
+}
